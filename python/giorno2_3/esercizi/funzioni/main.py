@@ -1,3 +1,13 @@
+## Parte prima
+def mydivmod (a,b):
+    if b == 0:
+        return "ZeroDivisionError"
+    quoziente = a//b
+    resto = a % b
+    return (quoziente,resto)
+print(mydivmod(2,6))
+
+## Parte Seconda
 def pow_list(values):
     return [value ** 2 for value in values]
 result = pow_list([1,2,3])
@@ -19,7 +29,6 @@ def reverse_string(rstr):
     #check if the input is a string
     if isinstance(rstr,str):
         return "".join(reversed(rstr))
-
 print(reverse_string("hello"))
 print(reverse_string("1234"))
 print(reverse_string(None))
@@ -33,7 +42,6 @@ def factorial(n):
     for i in range (1, n + 1):
         result *= i
     return result
-
 print(factorial(5))
 
 def is_palindrome (pstr):
@@ -41,7 +49,6 @@ def is_palindrome (pstr):
         return True
     else:
         return False
-
 text1 = "racecar"
 print(is_palindrome(text1))
 
@@ -51,14 +58,12 @@ def sum_even_numbers(n):
         if num % 2 == 0:
             total += num
     return total
-
 numbers1 = [1,2,3,4,5]
 print(sum_even_numbers(numbers1))
 
 def find_max (numbers):
      bigger = max(numbers)
      return bigger
-
 numbers2 = [3, 1, 4, 1, 5]
 print(find_max(numbers2))
 
