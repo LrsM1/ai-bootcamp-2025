@@ -9,11 +9,11 @@ assert italy.name == "Italy"
 sicily = Region("Sicily")
 
 # Aggiungo la Sicilia all'Italia
-italy.add(sicily)
+italy.add_region(sicily)
 
 # Aggiungo alla Sicilia due città
-sicily.add(City("Catania", pop=300_000))
-sicily.add(City("Palermo", pop=600_000))
+sicily.add_city(City("Catania", pop=300_000))
+sicily.add_city(City("Palermo", pop=600_000))
 
 # Verifico che la somma della popolazione delle due città siciliane
 # sia corretta, andando a guardare l'attributo (una proprietà) chiamata `pop`
@@ -22,10 +22,10 @@ assert sicily.pop == 900_000
 # Creo un'altra regione...
 calabria = Region("Calabria")
 # ... e una città
-calabria.add(City("Reggio Calabria", pop=170_000))
+calabria.add_city(City("Reggio Calabria", pop=170_000))
 
 # Aggiungo la nuova regione all'Italia
-italy.add(calabria)
+italy.add_region(calabria)
 
 # Infine, guarda un attributo (anch'esso una proprietà)
 # sul paese Italia
