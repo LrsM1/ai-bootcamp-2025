@@ -8,7 +8,7 @@ with open("data.csv") as fd:
 with open("data.csv") as fd:
     reader = csv.reader(fd)
     head = next(reader)
-    sorted_data = sorted(reader, key =lambda x: (x[1],x[0]))
+    sorted_data = sorted(reader, key =lambda person: (person[1],person[0]))
     print(sorted_data)
     for k, v in enumerate(sorted_data):
         # head.append(v)
